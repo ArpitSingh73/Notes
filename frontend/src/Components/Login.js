@@ -13,27 +13,27 @@ const Login = (props) => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     e.stopPropagation();
-    const response = await fetch("http://localhost:5000/api/auth/login", {
-      method: "POST",
-      headers: {
-        
-
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({
-        email: credentials.email,
-        password: credentials.password,
-      }),
-    });
+    // http://localhost:5000/api/auth/login
+    const response = await fetch("https://notes-3hhf.onrender.com/api/auth/login",
+      {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          email: credentials.email,
+          password: credentials.password,
+        }),
+      }
+    );
     const json = await response.json();
     console.log(json);
-   
+
     if (json.success) {
       // Save the auth token and redirect
       localStorage.setItem("token", json.jwtData);
       localStorage.setItem("name", json.name);
       props.show("Welcome Back", "success");
-      
 
       navigate("/");
     } else {

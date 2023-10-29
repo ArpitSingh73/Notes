@@ -14,7 +14,8 @@ const Signup = (props) => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     e.stopPropagation();
-    const response = await fetch("http://localhost:5000/api/auth/createuser", {
+    // http://localhost:5000/api/auth/createuser
+    const response = await fetch("https://notes-3hhf.onrender.com/createuser", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
