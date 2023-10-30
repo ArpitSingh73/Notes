@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/static/css/main.2a51005b.css",
-    "main.js": "/static/js/main.a58c2bf2.js",
+    "main.js": "/static/js/main.ff5068ca.js",
     "static/js/787.61668c33.chunk.js": "/static/js/787.61668c33.chunk.js",
     "static/media/cosmic-doodle-nz.jpg": "/static/media/cosmic-doodle-nz.afb8a26ae3f494a5ce2e.jpg",
     "index.html": "/index.html",
     "main.2a51005b.css.map": "/static/css/main.2a51005b.css.map",
-    "main.a58c2bf2.js.map": "/static/js/main.a58c2bf2.js.map",
+    "main.ff5068ca.js.map": "/static/js/main.ff5068ca.js.map",
     "787.61668c33.chunk.js.map": "/static/js/787.61668c33.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.2a51005b.css",
-    "static/js/main.a58c2bf2.js"
+    "static/js/main.ff5068ca.js"
   ]
 }
