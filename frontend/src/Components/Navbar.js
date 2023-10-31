@@ -21,7 +21,7 @@ const Navbar = () => {
     <nav
       className="navbar navbar-expand-lg navbar-dark py-3"
       style={{
-        position: "fixed",
+        // position: "fixed",
         width: "100%",
         backgroundColor: "#00264d    ",
         color: "#778899",
@@ -37,9 +37,12 @@ const Navbar = () => {
             marginRight: "8px",
           }}
         ></div>
-        <Link className="navbar-brand" to="/">
+        {localStorage.getItem("token")? <Link className="navbar-brand" to="/">
           <b> R-Notes</b>
-        </Link>
+        </Link>:<span></span>}
+        {/* <Link className="navbar-brand" to="/">
+          <b> R-Notes</b>
+        </Link> */}
         {/* <button
           className="navbar-toggler"
           type="button"
