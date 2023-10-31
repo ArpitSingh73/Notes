@@ -40,7 +40,7 @@ const Navbar = () => {
         <Link className="navbar-brand" to="/">
           <b> R-Notes</b>
         </Link>
-        <button
+        {/* <button
           className="navbar-toggler"
           type="button"
           data-bs-toggle="collapse"
@@ -50,8 +50,8 @@ const Navbar = () => {
           aria-label="Toggle navigation"
         >
           <span className="navbar-toggler-icon"></span>
-        </button>
-        <div className="collapse navbar-collapse" id="navbarSupportedContent">
+        </button> */}
+        <div id="navbarSupportedContent">
           <ul className="navbar-nav me-auto mb-2 mb-lg-0">
             {/* <li className="nav-item">
               <Link
