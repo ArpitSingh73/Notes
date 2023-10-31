@@ -31,8 +31,8 @@ const Noteitem = (props) => {
             <button
               className="btn btn-success"
               onClick={() => {
-                alert("Attention!!! Ideally the Edit button must open a modal for editing and updating the notes. However due to some CSS class error on Bootstrap, which currently I am unable to solve, this feature is not available. I might update in future.")
-                // updateNote(note);
+                alert("Attention!!! Ideally the Edit button must open a modal for editing & updating the notes, which works fine in Development environment. However due to some CSS class error on Bootstrap, which currently I am unable to solve, this feature is not available in production environment. I might update in future.")
+                updateNote(note);
               }}
             >
               Edit{" "}
